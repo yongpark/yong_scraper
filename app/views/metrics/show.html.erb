@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Successful:</strong>
+  <%= @metric.successful %>
+</p>
+
+<p>
+  <strong>Failed:</strong>
+  <%= @metric.failed %>
+</p>
+
+<p>
+  <strong>Remaining:</strong>
+  <%= @metric.remaining %>
+</p>
+
+<p>
+  <strong>Converted:</strong>
+  <%= @metric.converted %>
+</p>
+
+<p>
+  <strong>Queued at:</strong>
+  <%= @metric.queued_at %>
+</p>
+
+<p>
+  <strong>Contents:</strong>
+  <%= @metric.contents %>
+</p>
+
+<p>
+  <strong>Api:</strong>
+  <%= @metric.api_id %>
+</p>
+
+<p>
+  <strong>Auth:</strong>
+  <%= @metric.auth_id %>
+</p>
+
+<p>
+  <strong>App:</strong>
+  <%= @metric.app_id %>
+</p>
+
+<%= link_to 'Edit', edit_metric_path(@metric) %> |
+<%= link_to 'Back', metrics_path %>

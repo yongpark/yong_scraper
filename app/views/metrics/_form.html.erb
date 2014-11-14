@@ -1,0 +1,53 @@
+<%= form_for(@metric) do |f| %>
+  <% if @metric.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@metric.errors.count, "error") %> prohibited this metric from being saved:</h2>
+
+      <ul>
+      <% @metric.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :successful %><br>
+    <%= f.number_field :successful %>
+  </div>
+  <div class="field">
+    <%= f.label :failed %><br>
+    <%= f.number_field :failed %>
+  </div>
+  <div class="field">
+    <%= f.label :remaining %><br>
+    <%= f.number_field :remaining %>
+  </div>
+  <div class="field">
+    <%= f.label :converted %><br>
+    <%= f.number_field :converted %>
+  </div>
+  <div class="field">
+    <%= f.label :queued_at %><br>
+    <%= f.number_field :queued_at %>
+  </div>
+  <div class="field">
+    <%= f.label :contents %><br>
+    <%= f.text_field :contents %>
+  </div>
+  <div class="field">
+    <%= f.label :api_id %><br>
+    <%= f.text_field :api_id %>
+  </div>
+  <div class="field">
+    <%= f.label :auth_id %><br>
+    <%= f.text_field :auth_id %>
+  </div>
+  <div class="field">
+    <%= f.label :app_id %><br>
+    <%= f.text_field :app_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

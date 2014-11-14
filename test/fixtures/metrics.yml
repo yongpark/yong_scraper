@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  successful: 1
+  failed: 1
+  remaining: 1
+  converted: 1
+  queued_at: 1
+  contents: 
+  api_id: MyString
+  auth_id: MyString
+  app_id: MyString
+
+two:
+  successful: 1
+  failed: 1
+  remaining: 1
+  converted: 1
+  queued_at: 1
+  contents: 
+  api_id: MyString
+  auth_id: MyString
+  app_id: MyString
